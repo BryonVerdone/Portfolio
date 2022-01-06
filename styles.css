@@ -68,10 +68,15 @@ Nav Section
 .nav-item {
   padding: 10px;
 }
-.section-heading {
+.section-heading-container {
   text-align: center;
+}
+.section-heading {
+  display: inline-block;
   font-size: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
+  border-bottom: 2px solid black;
+  margin: 2rem 0;
 }
 /* 
 ==========
