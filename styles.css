@@ -11,7 +11,7 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
-body {
+/* body {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -23,7 +23,7 @@ body {
   100% {
     opacity: 1;
   }
-}
+} */
 ul {
   list-style: none;
   display: flex;
@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 }
 /* .container {
-  width: 1170px;
+  margin: 0 2rem;
 } */
 /* 
 ==========
@@ -84,12 +84,7 @@ Hero Section
 ==========
 */
 .hero-section {
-  /* background: linear-gradient(
-    90deg,
-    rgba(58, 97, 180, 1) 0%,
-    rgba(29, 218, 253, 1) 50%,
-    rgba(252, 69, 242, 1) 100%
-  ); */
+  background: red;
   padding: 10rem;
   width: 100%;
   /* height: 100vh; */
@@ -109,6 +104,7 @@ Hero Section
 .hero-text {
   font-size: 2rem;
   text-align: center;
+  width: 100%;
 }
 .hero-btn {
   margin: 1rem;
@@ -191,4 +187,39 @@ Project Section
 }
 .project-title {
   text-align: center;
+}
+
+/* 
+==========
+Contact Section
+==========
+*/
+
+.contact-section {
+  text-align: center;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+
+  /* justify-content: space-around; */
+}
+.contact-form ul {
+  display: block;
+  text-align: left;
+}
+.contact-form li {
+  padding: 0.5rem;
+}
+.form-input-fields {
+  width: 100%;
+}
+/* .form-group {
+  display: flex;
+  flex-direction: column;
+} */
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr;
 }
