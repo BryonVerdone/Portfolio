@@ -207,6 +207,19 @@ Services Section
   padding: 2rem;
   border: 3px solid black;
   border-radius: 5px;
+  color: white;
+}
+.card-blue {
+  background: rgb(36, 226, 254);
+}
+.card-yellow {
+  background: rgb(255, 211, 36);
+}
+.card-violet {
+  background: rgba(248, 47, 160, 0.99);
+}
+.card-green {
+  background: rgba(0, 188, 128, 0.99);
 }
 /* 
 ==========
@@ -227,10 +240,8 @@ Project Section
   border-radius: 5%;
   padding: 2rem;
   background: grey;
-  width: 100%;
 }
 .project-img {
-  width: 100%;
 }
 .project-img:hover {
   opacity: 0.5;
