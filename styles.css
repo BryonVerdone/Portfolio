@@ -11,19 +11,7 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 ul {
   list-style: none;
   display: flex;
@@ -51,12 +39,13 @@ Nav Section
   margin-right: 1rem;
   font-size: 1.5rem;
   box-shadow: 5px 5px 15px 5px #000000;
-  background: white;
+  background: #252525;
 }
 .logo-container {
   font-size: 2rem;
   font-weight: bold;
   margin-left: 1rem;
+  color: #feb632;
 }
 /* hide nav links at 560px */
 
@@ -64,9 +53,56 @@ Nav Section
   .nav-links {
     display: none;
   }
+  .mobile-btn {
+    display: block;
+  }
 }
 .nav-item {
   padding: 10px;
+  color: white;
+}
+/* 
+==========
+Mobile Nav Btn
+==========
+*/
+.mobile-btn {
+  margin: 1rem;
+  display: none;
+  color: #feb632;
+}
+@media (max-width: 560px) {
+  .mobile-btn {
+    display: block;
+  }
+}
+.mobile-nav {
+  background: #303131;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  z-index: 100;
+  border-right: 2px solid #feb632;
+}
+.mobile-hidden {
+  display: none;
+}
+.mobile-show {
+  display: block;
+}
+
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-item {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: white;
 }
 .section-heading-container {
   text-align: center;
@@ -75,8 +111,9 @@ Nav Section
   display: inline-block;
   font-size: 2rem;
   padding: 0.5rem;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #feb632;
   margin: 2rem 0;
+  color: white;
 }
 /* 
 ==========
@@ -84,12 +121,7 @@ Hero Section
 ==========
 */
 .hero-section {
-  /* background: linear-gradient(
-    90deg,
-    rgba(58, 97, 180, 1) 0%,
-    rgba(29, 218, 253, 1) 50%,
-    rgba(252, 69, 242, 1) 100%
-  ); */
+  background: #2b2c2c;
   padding: 10rem;
   width: 100%;
   /* height: 100vh; */
@@ -109,18 +141,22 @@ Hero Section
 .hero-text {
   font-size: 2rem;
   text-align: center;
+  color: white;
 }
 .hero-btn {
   margin: 1rem;
   font-size: 2rem;
+  font-weight: bold;
   border-radius: 3px;
-  background: paleturquoise;
+  padding: 0.5rem 3rem;
+  background: #feb632;
 }
 .social-icon {
-  color: blue;
+  color: #feb632;
   padding: 0.75rem;
 }
 .hero-img {
+  /* width: 100%; */
   object-fit: cover;
 }
 /* 
@@ -130,12 +166,10 @@ Tech Section
 */
 .tech-section {
   text-align: center;
-  /* margin-top: 2rem; */
   width: 100%;
-  /* background: brown; */
+  background: #303131;
 }
 .tech-container {
-  margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -146,6 +180,9 @@ Tech Section
 Services Section
 ==========
 */
+.services-section {
+  background: #303131;
+}
 .services-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -173,9 +210,11 @@ Services Section
 Project Section
 ==========
 */
+.projects-section {
+  background: #303131;
+}
 .projects-container {
   display: flex;
-
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 3rem;
