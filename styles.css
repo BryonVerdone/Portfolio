@@ -184,7 +184,7 @@ Services Section
 ==========
 */
 .services-section {
-  background: #303131;
+  background: #2b2c2c;
 }
 .services-container {
   display: grid;
@@ -248,4 +248,27 @@ Project Section
 }
 .project-title {
   text-align: center;
+}
+
+/* 
+==========
+Experience Section
+==========
+*/
+.experience-section {
+  background: #2b2c2c;
+}
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.experience-card {
+  background: #303131;
+  border: 1px solid #4e4e4e;
+  padding: 5rem 3rem;
+}
+.experience-card-heading {
+  color: white;
+  margin: 0.5rem 0;
 }
