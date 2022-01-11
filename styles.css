@@ -3,7 +3,11 @@
 Global Styles
 ==========
 */
-
+:root {
+  --section-darkest: #022b3a;
+  --section-dark: #1f7a8c;
+  --section-light: #bfdbf7;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -39,7 +43,7 @@ Nav Section
   margin-right: 1rem;
   font-size: 1.5rem;
   box-shadow: 5px 5px 15px 5px #000000;
-  background: #252525;
+  background: var(--section-darkest);
 }
 .logo-container {
   font-size: 2rem;
@@ -59,7 +63,7 @@ Nav Section
 }
 .nav-item {
   padding: 10px;
-  color: white;
+  color: var(--section-light);
 }
 /* 
 ==========
@@ -121,7 +125,7 @@ Hero Section
 ==========
 */
 .hero-section {
-  background: #2b2c2c;
+  background: var(--section-dark);
   padding: 10rem;
   width: 100%;
 }
@@ -141,7 +145,7 @@ Hero Section
 .hero-text {
   font-size: 2rem;
   text-align: center;
-  color: white;
+  color: var(--section-darkest);
 }
 .hero-btn {
   margin: 1rem;
@@ -149,10 +153,11 @@ Hero Section
   font-weight: bold;
   border-radius: 3px;
   padding: 0.5rem 3rem;
-  background: #feb632;
+  background: var(--section-light);
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.72);
 }
 .social-icon {
-  color: #feb632;
+  color: var(--section-light);
   padding: 0.75rem;
 }
 .hero-img-container {
@@ -170,28 +175,37 @@ Tech Section
 .tech-section {
   text-align: center;
   width: 100%;
-  background: #303131;
+  background: var(--section-darkest);
 }
-.tech-container {
+.tech-section-container {
+}
+/* .tech-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 3rem;
+} */
+.tech-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  width: 100%;
 }
+
 /* 
 ==========
 Services Section
 ==========
 */
 .services-section {
-  background: #303131;
+  background: var(--section-dark);
 }
 .services-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   gap: 2rem;
-  /* margin: 0 2rem; */
 }
 @media (max-width: 880px) {
   .services-container {
@@ -227,13 +241,17 @@ Project Section
 ==========
 */
 .projects-section {
-  background: #303131;
+  background: var(--section-darkest);
+  padding: 1rem;
 }
 .projects-container {
+}
+.project-cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 3rem;
+  width: 100%;
 }
 .project-card {
   border: 3px solid black;
@@ -242,10 +260,34 @@ Project Section
   background: grey;
 }
 .project-img {
+  width: 100%;
 }
 .project-img:hover {
   opacity: 0.5;
 }
 .project-title {
   text-align: center;
+}
+
+/* 
+==========
+Experience Section
+==========
+*/
+.experience-section {
+  background: var(--section-dark);
+}
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.experience-card {
+  background: var(--section-dark);
+  border: 3px solid --section-light;
+  /* padding: 5rem 3rem; */
+}
+.experience-card-heading {
+  color: white;
+  margin: 0.5rem 0;
 }
