@@ -7,3 +7,5 @@ mobileBtn.addEventListener('click', function () {
     mobileNav.classList.toggle('mobile-show');
   }
 });
+
+//close navbar on mobile link click

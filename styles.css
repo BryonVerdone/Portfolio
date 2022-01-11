@@ -14,6 +14,7 @@ html {
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 ul {
@@ -46,10 +47,13 @@ Nav Section
   background: var(--section-darkest);
 }
 .logo-container {
-  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-left: 1rem;
-  color: #feb632;
+  color: var(--section-light);
 }
 /* hide nav links at 560px */
 
@@ -62,7 +66,12 @@ Nav Section
   }
 }
 .nav-item {
+  font-weight: bolder;
   padding: 10px;
+  color: var(--section-dark);
+  transition: 0.5s;
+}
+.nav-item:hover {
   color: var(--section-light);
 }
 /* 
@@ -73,7 +82,7 @@ Mobile Nav Btn
 .mobile-btn {
   margin: 1rem;
   display: none;
-  color: #feb632;
+  color: var(--section-light);
 }
 @media (max-width: 560px) {
   .mobile-btn {
@@ -81,14 +90,14 @@ Mobile Nav Btn
   }
 }
 .mobile-nav {
-  background: #303131;
+  background: var(--section-darkest);
   position: fixed;
   top: 0;
   left: 0;
   width: 60%;
   height: 100%;
   z-index: 100;
-  border-right: 2px solid #feb632;
+  border-right: 2px solid var(--section-light);
 }
 .mobile-hidden {
   display: none;
@@ -106,11 +115,12 @@ Mobile Nav Btn
 .mobile-item {
   padding: 10px;
   font-size: 1.5rem;
-  color: white;
+  color: var(--section-dark);
 }
 .section-heading-container {
   text-align: center;
 }
+
 .section-heading {
   display: inline-block;
   font-size: 2rem;
@@ -154,7 +164,14 @@ Hero Section
   border-radius: 3px;
   padding: 0.5rem 3rem;
   background: var(--section-light);
+  color: var(--section-darkest);
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.72);
+  transition: 0.5s;
+  border: none;
+}
+.hero-btn:hover {
+  background: var(--section-darkest);
+  color: var(--section-light);
 }
 .social-icon {
   color: var(--section-light);
@@ -176,6 +193,7 @@ Tech Section
   text-align: center;
   width: 100%;
   background: var(--section-darkest);
+  padding-bottom: 1rem;
 }
 .tech-section-container {
 }
@@ -200,12 +218,15 @@ Services Section
 */
 .services-section {
   background: var(--section-dark);
+  padding-bottom: 1rem;
 }
 .services-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   gap: 2rem;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
 }
 @media (max-width: 880px) {
   .services-container {
@@ -213,12 +234,14 @@ Services Section
   }
 }
 .services-card {
+  min-height: 300px;
+  font-size: 1.5rem;
   background: linear-gradient(
     0deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(253, 187, 45, 1) 100%
   );
-  padding: 2rem;
+  padding: 4rem;
   border: 3px solid black;
   border-radius: 5px;
   color: white;
@@ -242,7 +265,7 @@ Project Section
 */
 .projects-section {
   background: var(--section-darkest);
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 .projects-container {
 }
@@ -258,11 +281,12 @@ Project Section
   border-radius: 5%;
   padding: 2rem;
   background: grey;
+  transition: 0.5s;
 }
 .project-img {
   width: 100%;
 }
-.project-img:hover {
+.project-card:hover {
   opacity: 0.5;
 }
 .project-title {
@@ -277,17 +301,29 @@ Experience Section
 .experience-section {
   background: var(--section-dark);
 }
-.experience-container {
+.experience-section-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
 }
+@media (max-width: 880px) {
+  .experience-section-container {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
 .experience-card {
   background: var(--section-dark);
-  border: 3px solid --section-light;
-  /* padding: 5rem 3rem; */
+  border: 3px solid var(--section-light);
+  transition: 0.5s;
+}
+.experience-card:hover {
+  background: var(--section-light);
 }
 .experience-card-heading {
   color: white;
   margin: 0.5rem 0;
+}
+.experience-info-container {
+  padding: 5rem;
 }
