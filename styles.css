@@ -123,7 +123,7 @@ Mobile Nav Btn
 
 .section-heading {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0.5rem;
   border-bottom: 2px solid #feb632;
   margin: 2rem 0;
@@ -156,6 +156,12 @@ Hero Section
   font-size: 2rem;
   text-align: center;
   color: var(--section-darkest);
+}
+.hero-name {
+  margin-bottom: 0.5rem;
+}
+.hero-title {
+  margin-bottom: 0.5rem;
 }
 .hero-btn {
   margin: 1rem;
@@ -255,27 +261,28 @@ Services Section
 .services-card {
   min-height: 300px;
   font-size: 1.5rem;
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
   padding: 4rem;
   border: 3px solid black;
   border-radius: 5px;
   color: white;
 }
 .card-blue {
-  background: rgb(36, 226, 254);
+  background: #79afba;
 }
 .card-yellow {
-  background: rgb(255, 211, 36);
+  background: #4c95a3;
 }
 .card-violet {
-  background: rgba(248, 47, 160, 0.99);
+  background: #79afba;
 }
 .card-green {
-  background: rgba(0, 188, 128, 0.99);
+  background: #4c95a3;
+}
+.service-icon {
+  margin-bottom: 0.75rem;
+}
+.services-card-heading {
+  margin-bottom: 0.25rem;
 }
 /* 
 ==========
@@ -299,8 +306,6 @@ Project Section
 .project-card {
   border: 3px solid black;
   border-radius: 5%;
-  padding: 2rem;
-  background: grey;
   transition: 0.5s;
 }
 .project-img {
