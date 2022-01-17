@@ -355,3 +355,11 @@ Experience Section
 .experience-info-container {
   padding: 5rem;
 }
+/* 
+==========
+Contact Section
+==========
+*/
+.contact-section {
+  background: var(--section-darkest);
+}
