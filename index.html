@@ -32,7 +32,7 @@
           <a href="#projects">
             <li class="nav-item">Projects</li>
           </a>
-          <a href="#">
+          <a href="#contact">
             <li class="nav-item">Contact</li>
           </a>
         </ul>
@@ -56,7 +56,7 @@
         <a href="#projects">
           <li class="mobile-item">Projects</li>
         </a>
-        <a href="#">
+        <a href="#contact">
           <li class="mobile-item">Contact</li>
         </a>
       </ul>
@@ -68,8 +68,8 @@
         <div class="hero-text">
           <div class="hero-name"><h2>Bryon Verdone</h2></div>
           <div class="hero-title"><p>Front-End Web Developer</p></div>
+          <a href="#contact"><button class="hero-btn">Let's Connect</button></a>
 
-          <button class="hero-btn">Let's Connect</button>
           <div class="social-links">
             <a
               class="social-icon"
@@ -239,6 +239,35 @@
       <div class="section-heading-container">
         <h1 id="contact" class="section-heading">Contact</h1>
       </div>
+      <form
+        action="https://formspree.io/f/myylbyrr"
+        method="POST"
+        class="contact-form"
+      >
+        <div class="form-group">
+          <label for="">Full Name</label>
+          <input placeholder="Enter You Name" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="">Phone Number</label>
+          <input placeholder="Enter You Phone Number" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input name="_replyto" placeholder="Enter Your Email" type="email" />
+        </div>
+        <div class="form-group">
+          <label for="">You Message</label>
+          <textarea
+            placeholder="Enter Your Message Here"
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button type="submit" class="contact-btn">Submit</button>
+      </form>
     </section>
     <!-- end of Contact section -->
 
