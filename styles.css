@@ -123,7 +123,7 @@ Mobile Nav Btn
 
 .section-heading {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding: 0.5rem;
   border-bottom: 2px solid #feb632;
   margin: 2rem 0;
@@ -229,8 +229,9 @@ Tech Section
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 3rem;
+  gap: 3.5rem;
   width: 100%;
+  padding: 2rem 0;
 }
 
 /* 
@@ -326,8 +327,8 @@ Experience Section
 .experience-section-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  place-items: center;
   padding: 0 1rem;
+  gap: 1rem;
 }
 
 @media (max-width: 880px) {
@@ -343,6 +344,9 @@ Experience Section
 }
 .experience-card:hover {
   background: var(--section-light);
+}
+.experience-card:hover .experience-card-heading {
+  color: #022b3a;
 }
 .experience-card-heading {
   color: white;
