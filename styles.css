@@ -375,7 +375,8 @@ form {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin: 0.5rem 0;
+  /* add magin left and right more margin on bigger screens */
+  margin: 0.5rem;
 }
 label {
   color: #bfdbf7;
