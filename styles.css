@@ -99,6 +99,7 @@ Mobile Nav Btn
   z-index: 100;
   border-right: 2px solid var(--section-light);
 }
+
 .mobile-hidden {
   display: none;
 }
@@ -365,10 +366,12 @@ Contact Section
   background: var(--section-darkest);
 }
 form {
+  max-width: 720px;
   padding: 0 3rem;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: auto;
 }
 
 .form-group {
