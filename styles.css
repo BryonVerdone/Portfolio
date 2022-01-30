@@ -206,6 +206,7 @@ About me Section
   color: #bfdbf7;
   font-size: 1.5rem;
   margin: 0 2rem;
+  padding: 2rem 0;
 }
 
 /* 
@@ -216,7 +217,8 @@ Tech Section
 .tech-section {
   text-align: center;
   width: 100%;
-  background: var(--section-darkest);
+  background: var(--section-dark);
+
   padding-bottom: 1rem;
 }
 
@@ -241,7 +243,7 @@ Services Section
 ==========
 */
 .services-section {
-  background: var(--section-dark);
+  background: var(--section-darkest);
   padding-bottom: 1rem;
 }
 .services-container {
@@ -249,7 +251,7 @@ Services Section
   grid-template-columns: 1fr 1fr;
   place-items: center;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 
   /* padding-left: 2rem;
   padding-right: 2rem; */
@@ -291,7 +293,7 @@ Project Section
 ==========
 */
 .projects-section {
-  background: var(--section-darkest);
+  background: var(--section-dark);
   padding-bottom: 1rem;
 }
 
@@ -301,14 +303,16 @@ Project Section
   justify-content: space-evenly;
   gap: 3rem;
   width: 100%;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 }
 .project-card {
   transition: 0.5s;
 }
+
 .project-img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 15px;
+  object-fit: contain;
 }
 .project-card:hover {
   opacity: 0.5;
@@ -323,13 +327,14 @@ Experience Section
 ==========
 */
 .experience-section {
-  background: var(--section-dark);
+  background: var(--section-darkest);
+
   padding-bottom: 1rem;
 }
 .experience-section-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   gap: 1rem;
 }
 
@@ -363,7 +368,7 @@ Contact Section
 ==========
 */
 .contact-section {
-  background: var(--section-darkest);
+  background: var(--section-dark);
 }
 form {
   max-width: 720px;
