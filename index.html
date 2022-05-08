@@ -7,274 +7,48 @@
     <link rel="stylesheet" href="./styles.css" />
     <link
       rel="stylesheet"
-      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+      href="./photos/fontawesome-free-5.12.1-web/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Patua+One&family=Spartan:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
       rel="stylesheet"
     />
     <title>Bryon Verdone</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo-container">BV.</div>
-      <div class="nav-links">
-        <ul>
-          <a href="#">
-            <li class="nav-item">Home</li>
+    <main>
+      <section class="hero-content">
+        <img class="headshot" src="./photos/portfilio-img.JPG" alt="" />
+        <h2 class="hero-heading">Bryon Verdone</h2>
+        <article class="icon-container">
+          <a target="_blank" href="https://github.com/BryonVerdone">
+            <i class="fab fa-github icon"></i>
           </a>
-          <a href="#about">
-            <li class="nav-item">About</li>
+          <a target="_blank" href="https://www.linkedin.com/in/bryon-verdone/"
+            ><i class="fab fa-linkedin icon"></i>
           </a>
-          <a href="#services">
-            <li class="nav-item">Services</li>
+          <a target="_blank" href="https://myjavascriptjourney.com/">
+            <i class="fas fa-edit icon"></i>
           </a>
-          <a href="#projects">
-            <li class="nav-item">Projects</li>
-          </a>
-          <a href="#contact">
-            <li class="nav-item">Contact</li>
-          </a>
-        </ul>
-      </div>
-      <div id="mobile-btn" class="mobile-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </nav>
-    <!-- mobile nav -->
-    <nav id="mobile-nav" class="mobile-nav mobile-hidden">
-      <ul>
-        <a href="#">
-          <li class="mobile-item">Home</li>
-        </a>
-        <a href="#about">
-          <li class="mobile-item">About</li>
-        </a>
-        <a href="#services">
-          <li class="mobile-item">Services</li>
-        </a>
-        <a href="#projects">
-          <li class="mobile-item">Projects</li>
-        </a>
-        <a href="#contact">
-          <li class="mobile-item">Contact</li>
-        </a>
-      </ul>
-    </nav>
-    <!-- end of mobile nav -->
-
-    <section class="hero-section">
-      <div class="hero-container">
-        <div class="hero-text">
-          <div class="hero-name"><h2>Bryon Verdone</h2></div>
-          <div class="hero-title"><p>Front-End Web Developer</p></div>
-          <a href="#contact"><button class="hero-btn">Let's Connect</button></a>
-
-          <div class="social-links">
-            <a
-              class="social-icon"
-              href="https://www.linkedin.com/in/bryon-verdone-53678a144/"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a
-              class="social-icon"
-              href="https://github.com/BryonVerdone"
-              target="_blank"
-              ><i class="fab fa-github-square"></i
-            ></a>
-            <a
-              class="social-icon"
-              href="https://twitter.com/_thebryguy"
-              target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </div>
-        </div>
-        <div class="hero-img-container">
-          <img class="hero-img" src="./photos/bryon_react_img.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <section id="about" class="about-me-section">
-      <h1 class="section-heading">About Me</h1>
-      <div class="about-me-container">
-        <p>
-          I'm a front end web developer looking to use my experience in
-          healthcare and education to work with a team and build user
-          interfaces.
+        </article>
+        <p class="hero-text">
+          Web developer with a passion for learning and teaching.
         </p>
-      </div>
-    </section>
-    <section class="tech-section">
-      <h1 class="section-heading">Tech I Use</h1>
-      <div class="tech-section-container">
-        <div class="tech-cards-container">
-          <div class="tech-img-container">
-            <img src="./photos/HTML5.png" alt="" />
-          </div>
-          <div class="tech-img-container">
-            <img src="./photos/CSS.png" alt="" />
-          </div>
-          <div class="tech-img-container">
-            <img src="./photos/JS.png" alt="" />
-          </div>
-          <div class="tech-img-container">
-            <img src="./photos/Git-Icon.png" alt="" />
-          </div>
-          <div class="tech-img-container">
-            <img src="./photos/github_logo.png" alt="" />
-          </div>
-          <div class="tech-img-container">
-            <img src="./photos/vscode_logo.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services" class="services-section">
-      <div class="section-heading-container">
-        <h1 class="section-heading">Services</h1>
-      </div>
-      <div class="services-container">
-        <div class="services-card card-blue">
-          <!-- add icons to cards -->
-          <i class="fas fa-laptop-code service-icon"></i>
-          <div class="services-card-heading"><h4>Web Development</h4></div>
-
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-            delectus magni nulla deserunt facere repellat!
-          </p>
-        </div>
-        <div class="services-card card-yellow">
-          <i class="far fa-edit service-icon"></i>
-          <div class="services-card-heading"><h4>UX/UI Design</h4></div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-            delectus magni nulla deserunt facere repellat!
-          </p>
-        </div>
-        <div class="services-card card-violet">
-          <i class="fas fa-mobile-alt service-icon"></i>
-          <div class="services-card-heading"><h4>Mobile Development</h4></div>
-
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-            delectus magni nulla deserunt facere repellat!
-          </p>
-        </div>
-        <div class="services-card card-green">
-          <i class="fas fa-book-reader service-icon"></i>
-          <div class="services-card-heading"><h4>Coaching</h4></div>
-
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-            delectus magni nulla deserunt facere repellat!
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="projects-section">
-      <div class="section-heading-container">
-        <h1 id="projects" class="section-heading">Projects</h1>
-      </div>
-      <div class="projects-container">
-        <div class="project-cards-container">
-          <div class="project-card">
-            <img class="project-img" src="./photos/projects/code.jpg" alt="" />
-          </div>
-          <div class="project-card">
-            <img class="project-img" src="./photos/projects/code.jpg" alt="" />
-          </div>
-          <div class="project-card">
-            <img class="project-img" src="./photos/projects/code.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Experience section -->
-    <section class="experience-section">
-      <div class="section-heading-container">
-        <h1 id="experience" class="section-heading">Experience</h1>
-      </div>
-      <div class="experience-section-container">
-        <div class="experience-card">
-          <div class="experience-info-container">
-            <span class="experience-card-subheading">July 2019-2021</span>
-            <h2 class="experience-card-heading">UI/UX Designer</h2>
-            <span class="experience-card-subheading">Therap Inc.</span>
-            <p class="experience-card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
-        </div>
-        <div class="experience-card">
-          <div class="experience-info-container">
-            <span class="experience-card-subheading">July 2019-2021</span>
-            <h2 class="experience-card-heading">Front-End Developer</h2>
-            <span class="experience-card-subheading">Therap Inc.</span>
-            <p class="experience-card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
-        </div>
-        <div class="experience-card">
-          <div class="experience-info-container">
-            <span class="experience-card-subheading">July 2019-2021</span>
-            <h2 class="experience-card-heading">Tech Lead</h2>
-            <span class="experience-card-subheading">Therap Inc.</span>
-            <p class="experience-card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end of Experience section -->
-
-    <!-- Contact section -->
-    <section class="contact-section">
-      <div class="section-heading-container">
-        <h1 id="contact" class="section-heading">Contact</h1>
-      </div>
-      <form
-        action="https://formspree.io/f/myylbyrr"
-        method="POST"
-        class="contact-form"
-      >
-        <div class="form-group">
-          <label for="">Full Name</label>
-          <input required placeholder="Enter You Name" type="text" />
-        </div>
-        <div class="form-group">
-          <label for="">Phone Number</label>
-          <input required placeholder="Enter You Phone Number" type="text" />
-        </div>
-        <div class="form-group">
-          <label for="">Email</label>
-          <input
-            required
-            name="_replyto"
-            placeholder="Enter Your Email"
-            type="email"
-          />
-        </div>
-        <div class="form-group">
-          <label for="">You Message</label>
-          <textarea
-            required
-            placeholder="Enter Your Message Here"
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-        <button type="submit" class="contact-btn">Submit</button>
-      </form>
-    </section>
-    <!-- end of Contact section -->
-
+      </section>
+      <section class="projects">
+        <article class="project-card">
+          <img src="./photos/lawyer-thumb.png" alt="" class="project-img" />
+        </article>
+        <article class="project-card">
+          <img src="./photos/lawyer-thumb.png" alt="" class="project-img" />
+        </article>
+        <article class="project-card">
+          <img src="./photos/lawyer-thumb.png" alt="" class="project-img" />
+        </article>
+      </section>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
