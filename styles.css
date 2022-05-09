@@ -5,10 +5,12 @@ Global Styles
 */
 :root {
   --background-primary: #2b2c2c;
+  --background-light: #303131;
   --orange-primary: #feb632;
   --heading-color: #cccccc;
   --textColor: #9f9f9f;
   --main-font: 'Poppins', sans-serif;
+  --transition: all 0.3s ease-in-out;
 }
 
 * {
@@ -38,6 +40,7 @@ main {
   gap: 20px;
 }
 .headshot {
+  padding: 2rem;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -61,6 +64,8 @@ main {
   text-align: center;
   color: var(--textColor);
   font-family: var(--main-font);
+  font-size: 1.25rem;
+  padding: 0 10px;
 }
 /* 
 ==========
@@ -69,11 +74,62 @@ Project Section
 */
 .projects {
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-top: 2rem auto;
+  padding: 2rem;
+}
+@media screen and (max-width: 911px) {
+  .projects {
+    flex-direction: column;
+  }
+}
+.project-card {
+  /* flex: 2; */
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--orange-primary);
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--background-light);
 }
 .project-img {
-  width: 300px;
-  height: auto;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+
+  /* height: auto; */
+}
+.project-title {
+  padding: 10px;
+  font-family: var(--main-font);
+  text-align: center;
+  color: var(--heading-color);
+}
+.btn-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  background: var(--orange-primary);
+  color: var(--background-light);
+  padding: 16px 12px;
+  border-radius: 8px;
+  width: 100%;
+  border: 2px solid var(--orange-primary);
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--background-light);
+  color: #feb632;
 }
