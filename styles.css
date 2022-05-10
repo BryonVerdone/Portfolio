@@ -60,6 +60,7 @@ main {
   font-size: 32px;
   color: var(--orange-primary);
 }
+
 .hero-text {
   text-align: center;
   color: var(--textColor);
@@ -67,6 +68,11 @@ main {
   font-size: 1.25rem;
   padding: 0 10px;
 }
+.heartbeat {
+  color: var(--orange-primary);
+  border-bottom: 2px solid var(--orange-primary);
+}
+
 /* 
 ==========
 Project Section
@@ -107,6 +113,8 @@ Project Section
   font-family: var(--main-font);
   text-align: center;
   color: var(--heading-color);
+  width: 100%;
+  height: auto;
 }
 .btn-container {
   margin-top: 1rem;
@@ -132,4 +140,22 @@ Project Section
 .btn:hover {
   background: var(--background-light);
   color: #feb632;
+}
+.email-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.email {
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+  color: var(--orange-primary);
+  text-align: center;
+}
+.resume {
+  text-align: center;
+  max-width: 130px;
 }
