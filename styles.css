@@ -68,7 +68,7 @@ main {
   font-size: 1.25rem;
   padding: 0 10px;
 }
-.heartbeat {
+.highlight {
   color: var(--orange-primary);
   border-bottom: 2px solid var(--orange-primary);
 }
