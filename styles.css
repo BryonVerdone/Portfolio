@@ -79,17 +79,16 @@ Project Section
 ==========
 */
 .projects {
-  display: flex;
+  display: grid;
   /* flex-wrap: wrap; */
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem auto;
   padding: 2rem;
 }
-@media screen and (max-width: 911px) {
+@media screen and (max-width: 837px) {
   .projects {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 .project-card {
@@ -100,6 +99,7 @@ Project Section
   border-radius: 8px;
   padding: 1rem;
   background: var(--background-light);
+  width: 100%;
 }
 .project-img {
   object-fit: cover;
