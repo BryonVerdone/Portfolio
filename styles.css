@@ -4,11 +4,11 @@ Global Styles
 ==========
 */
 :root {
-  --background-primary: #2b2c2c;
+  --background-primary: #fffff;
   --background-light: #303131;
   --orange-primary: #feb632;
   --heading-color: #cccccc;
-  --textColor: #9f9f9f;
+  --textColor: black;
   --main-font: 'Poppins', sans-serif;
   --transition: all 0.3s ease-in-out;
 }
@@ -158,4 +158,25 @@ Project Section
 .resume {
   text-align: center;
   max-width: 130px;
+}
+.tools-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 10px 20px;
+}
+.tools-card {
+  padding: 10px;
+}
+.tools-card h2 {
+  text-align: center;
+}
+.tools-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer {
+  text-align: center;
 }
